@@ -22,7 +22,7 @@ The dataset is suitable for binary classification because the target variable co
 
 ## 3. GitHub Repository Link
 
-**Repository:** To be added after creating the GitHub repository.
+**Repository:** (https://github.com/vijaya-ai-ds/breast-cancer-classification)
 
 ## 4. Machine Learning Models Used
 
