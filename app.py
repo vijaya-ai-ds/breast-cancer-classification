@@ -32,11 +32,11 @@ st.write(
 
 # Model paths
 model_paths = {
-    "Logistic Regression": "logistic_regression.joblib",
-    "Decision Tree": "decision_tree.joblib",
-    "KNN": "knn.joblib",
-    "Gaussian Naive Bayes": "naive_bayes.joblib",
-    "Support Vector Machine": "svm.joblib"
+   "model/logistic_regression.joblib"
+"model/decision_tree.joblib"
+"model/knn.joblib"
+"model/naive_bayes.joblib"
+"model/svm.joblib"
 }
 # Upload dataset
 uploaded_file = st.file_uploader(
