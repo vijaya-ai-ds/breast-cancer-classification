@@ -22,9 +22,15 @@ The dataset is suitable for binary classification because the target variable co
 
 ## 3. GitHub Repository Link
 
-**Repository:** (https://github.com/vijaya-ai-ds/breast-cancer-classification)
+**Repository:** [Breast Cancer Classification](https://github.com/vijaya-ai-ds/breast-cancer-classification)
 
-## 4. Machine Learning Models Used
+## 4. Live Streamlit Application
+
+**Streamlit App:** [Breast Cancer Classification – Live Application](https://2026ak05244.streamlit.app/)
+
+The application allows users to upload a test CSV file, select one of the five trained models, and view the classification results.
+
+## 5. Machine Learning Models Used
 
 The following five classification algorithms are implemented using the same dataset:
 
@@ -34,7 +40,7 @@ The following five classification algorithms are implemented using the same data
 4. Gaussian Naive Bayes
 5. Support Vector Machine (SVM)
 
-## 5. Evaluation Metrics
+## 6. Evaluation Metrics
 
 The models are evaluated using the following six metrics:
 
@@ -45,7 +51,7 @@ The models are evaluated using the following six metrics:
 - **F1 Score:** Represents the harmonic mean of precision and recall.
 - **Matthews Correlation Coefficient (MCC):** Measures the agreement between actual and predicted classifications.
 
-### 5.1 Model Performance Comparison
+### 6.1 Model Performance Comparison
 
 The following table presents the evaluation results obtained from the current test split.
 
@@ -57,7 +63,7 @@ The following table presents the evaluation results obtained from the current te
 | Gaussian Naive Bayes | 0.9386 | 0.9934 | 1.0000 | 0.8333 | 0.9091 | 0.8715 |
 | Support Vector Machine | 0.9737 | 0.9947 | 1.0000 | 0.9286 | 0.9630 | 0.9442 |
 
-### 5.2 Observations on Model Performance
+### 6.2 Observations on Model Performance
 
 **1. Logistic Regression**
 
@@ -79,7 +85,7 @@ Gaussian Naive Bayes achieved an accuracy of 93.86% and an AUC score of 0.9934. 
 
 SVM achieved the highest accuracy of 97.37%, a precision of 1.0000, an F1 score of 0.9630, and an MCC of 0.9442. Its AUC score was 0.9947. It provided the strongest overall performance by accuracy on the current test split.
 
-### 5.3 Overall Winner
+### 6.3 Overall Winner
 
 **Support Vector Machine (SVM) is the overall winner based on the current test results.**
 
@@ -89,16 +95,18 @@ Logistic Regression achieved the highest AUC score of 0.9960. Therefore, SVM per
 
 These results represent the current test split and do not guarantee the same performance on other datasets.
 
-## 6. Project Structure
+## 7. Project Structure
 
 ```text
-Assignment2/
+breast-cancer-classification/
+│
 ├── model/
 │   ├── decision_tree.joblib
 │   ├── knn.joblib
 │   ├── logistic_regression.joblib
 │   ├── naive_bayes.joblib
 │   └── svm.joblib
+│
 ├── app.py
 ├── data.csv
 ├── test_data.csv
@@ -107,7 +115,7 @@ Assignment2/
 └── requirements.txt
 ```
 
-## 7. Technologies Used
+## 8. Technologies Used
 
 - Python
 - Pandas
@@ -117,7 +125,7 @@ Assignment2/
 - Joblib
 - Streamlit
 
-## 8. Installation
+## 9. Installation
 
 Install the required dependencies using the following command:
 
@@ -125,7 +133,7 @@ Install the required dependencies using the following command:
 python -m pip install -r requirements.txt
 ```
 
-## 9. Running the Application
+## 10. Running the Application
 
 Open a terminal in the project directory and execute:
 
@@ -135,7 +143,7 @@ python -m streamlit run app.py
 
 The application will open in a web browser.
 
-## 10. Streamlit Application Features
+## 11. Streamlit Application Features
 
 The application provides the following features:
 
@@ -146,10 +154,11 @@ The application provides the following features:
 - Generate predictions on the uploaded test data.
 - Display Accuracy, AUC, Precision, Recall, F1 Score, and MCC.
 - Display a confusion matrix for evaluating classification performance.
+- Download the prediction results as a CSV file.
 
 The application uses saved models to make predictions without retraining them on the uploaded test dataset.
 
-## 11. Conclusion
+## 12. Conclusion
 
 Five machine learning classification algorithms were implemented and evaluated on the Breast Cancer Wisconsin dataset using six performance metrics.
 
